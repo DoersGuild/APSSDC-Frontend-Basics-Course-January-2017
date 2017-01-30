@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Intro to JS</title>
+    </head>
+    <body>
+        <h2>Hello JavaScript</h2>
+        <p>Sum: <span id="sumResult"></span></p>
+        <form onsubmit="JavaScript:calculate(); return false;"> <!-- Don't use event attributes in production -->
+            <input id="inputParam1" type="number" step="any" />
+            <select id="operatorParam">
+                <option value="+">+</option>
+                <option>-</option>
+                <option>/</option>
+                <option>*</option>
+            </select>
+            <input id="inputParam2" type="number" step="any" />
+            <button type="submit">Calculate</button>
+            <input id="resultBox" type="number" readonly="readonly" />
+        </form>
+        <br/>
+        <label>
+            Pick Background color:
+            <input type="color" id="backgroundColorPicker" onChange="JavaScript: updateColor();" />
+        </label>
+        <script type="text/JavaScript" src="./js/main.js"></script>
+        <script type="text/JavaScript" src="./js/calculate.js"></script>
+    </body>
+</html>

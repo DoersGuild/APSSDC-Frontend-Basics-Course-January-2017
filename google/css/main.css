@@ -1,0 +1,54 @@
+/*selector1, selector2 {
+    property1: value1;
+    property2: value2;
+}
+selector3 {
+    property1: value1;
+    property2: value2;
+}*/
+body {
+    /* 1. Center the content
+     * 2. Bring it down a bit - vertically center as well
+     */
+    text-align: center;
+    margin-top: 90px;
+}
+input {
+    width: 410px;
+    height: 20px;
+    border: 1px solid #9f9f9f;
+    padding: 2px 5px;
+    margin: 10px;
+}
+#searchInput {
+    background-color: purple;
+}
+button {
+    color: blue;
+    background-color: yellow;
+}
+span button {
+    color: red;
+}
+button {
+    color: pink;
+}
+.btn, .btn button {
+    font-size: 18px;
+}
+button:hover {
+    font-size: 100px;
+}
+@media (max-width:410px) and (min-width:200px) {
+    input {
+        max-width: 100%;
+    }
+    body {
+        background: skyblue;
+    }
+}
+@media print {
+  body { 
+    background: red; 
+  }
+}
