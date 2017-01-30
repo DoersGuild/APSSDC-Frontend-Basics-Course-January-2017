@@ -9,6 +9,10 @@
         $h3.first().show().css({
             'font-size': '25px',
             'background': 'yellow'
-        }); // .css sets the CSS properties of all the elements represented by a jQuery obhect
+        }); // .css sets the CSS properties of all the elements represented by a jQuery object
+        // Call the plugin
+        $('.js-show-date-and-time').showDateAndTime().css({
+            'font-weight': 'bold'
+        });
     });
 })(jQuery);
